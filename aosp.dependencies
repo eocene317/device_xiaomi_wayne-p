@@ -13,9 +13,9 @@
   },
   {
     "remote":      "github",
-    "repository":  "xiaomi-sdm660/android_vendor_xiaomi_wayne",
+    "repository":  "PIPIPIG233666/vendor_xiaomi_wayne",
     "target_path": "vendor/xiaomi/wayne",
-    "branch":      "master"
+    "branch":      "pie"
   },
   {
     "remote":      "los",
