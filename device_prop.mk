@@ -54,7 +54,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.imx376_ofilm.light.lux=280 \
 	persist.sys.exif.make=Xiaomi \
 	persist.sys.exif.model=MI 6X \
-	persist.radio.VT_CAM_INTERFACE=2
+	persist.radio.VT_CAM_INTERFACE=2 \
+	persist.camera.HAL3.enabled=1 \
+	persist.camera.eis.enable=1
 
 # Dual SIM
 PRODUCT_PROPERTY_OVERRIDES += \

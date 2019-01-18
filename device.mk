@@ -44,6 +44,16 @@ PRODUCT_COPY_FILES += \
 	$(DEVICE_PATH)/audio/audio_tuning_mixer.txt:$(TARGET_COPY_OUT_VENDOR)/etc/audio_tuning_mixer.txt \
 	$(DEVICE_PATH)/audio/graphite_ipc_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/graphite_ipc_platform_info.xml
 
+# Biometrics
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_wayne
+
+PRODUCT_PACKAGES += \
+    org.ifaa.android.manager
+
+PRODUCT_BOOT_JARS += \
+    org.ifaa.android.manager
+	
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
@@ -55,6 +65,10 @@ PRODUCT_PACKAGES += \
 
 # Device properties
 $(call inherit-product, $(DEVICE_PATH)/device_prop.mk)
+
+# GoogleCamera
+PRODUCT_PACKAGES += \
+        GoogleCamera
 
 # Init
 PRODUCT_PACKAGES += \
