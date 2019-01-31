@@ -92,7 +92,7 @@ PRODUCT_PACKAGES += \
 	android.hardware.vibrator@1.0-service
 
 # Vendor files
-$(call inherit-product, vendor/xiaomi/jasmine-common/jasmine-vendor.mk)
+$(call inherit-product, vendor/xiaomi/wayne/wayne-vendor.mk)
 
 # AOSP DEVICE
 PRODUCT_NAME := aosp_wayne
