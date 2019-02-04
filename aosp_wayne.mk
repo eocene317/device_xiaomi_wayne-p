@@ -24,9 +24,8 @@
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/wayne/device.mk)
 
-# Inherit from PixelExperience custom product configuration
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-TARGET_GAPPS_ARCH := arm64
+# Inherit from aosp custom product configuration
+$(call inherit-product, vendor/aosp/common.mk)
 
 TARGET_VENDOR_PRODUCT_NAME := wayne
 
